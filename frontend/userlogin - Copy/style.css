@@ -1,0 +1,141 @@
+body {
+    background-image: url("background.jpg");
+    background-color: lightyellow;
+  }
+  
+  
+  
+  table {
+    background-color: yellow;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  .btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+    display: inline-block;
+    color: #ff0000;
+    background-color: #ffcccc;
+    padding: 5px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .invalid-input {
+    border: 1px solid #ff0000;
+  }
+  .dialog-box {
+    position: relative;
+    display: inline-block;
+    background-color:rgb(195, 104, 195) ;
+    color: hsl(268, 86%, 5%);
+    padding: 5px;
+    border: 1px solid rgb(195, 104, 195);
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .dialog-box::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(195, 104, 195);
+  }
+  
+  .error-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  nav {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color:brown;
+  }
+  
+  nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: yellow;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+  }
+  
+  
+  nav ul li:hover {
+    background-color: green;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 18px; 
+    }
+    
+   /* Button style for the dropbtn class and any child i elements */
+  .dropbtn,
+  .dropbtn i {
+    color: red;
+  }
+  
+  /* Dropdown button on hover and focus */
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #2980B9; /* Change the background color on hover */
+  }
+  
+    /* The container <div> - needed to position the dropdown content */
+  

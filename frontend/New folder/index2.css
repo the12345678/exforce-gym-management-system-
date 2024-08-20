@@ -1,0 +1,104 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira Sans", sans-serif;
+	background-color: white;
+}
+
+nav {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 5%;
+	background-color: greenyellow;
+}
+
+nav .heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: yellow;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*nav .heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+}*/
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 8px 15px;
+	border-radius: 10px;
+	transition: 0.2s ease-in;
+}
+
+nav ul li a {
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	
+}
+
+nav ul li:hover {
+	background-color: green;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+/* responsive navbar css */
+/*@media screen and (max-width: 600px) {
+	nav .sideMenuButton {
+		display: flex;
+	}
+
+	nav .navbar {
+		display: none;
+	}
+
+	.sideNavigationBar {
+		display: block !important;
+	}
+}
+
+/* Additional styles for the page content if needed */
+
+
+.input3 {
+    display: flex;
+    justify-content: center; /* Horizontally aligns content in the center */
+    align-items: center; /* Vertically aligns content in the center */
+    height: 70vh; /* Sets the height to 100% of the viewport height */
+  }
+  
+  .rightside1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally aligns content in the center */
+    text-align: center; /* Horizontally aligns text in the center */
+  }
+  
+  .title1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+  }
+  
+  .content1 {
+    width: 450px;
+    margin-top: 2px;
+    color: grey;
+  }
+  

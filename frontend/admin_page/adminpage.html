@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+    .image-box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin: 50px;
+      position: relative;
+    }
+    
+    .image-box button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .additional-button {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+      <!-- Image box content goes here -->
+      <button>Button 1</button>
+    </div>
+    <div class="image-box">
+      <!-- Image box content goes here -->
+      <button>Button 2</button>
+    </div>
+    <div class="image-box">
+      <!-- Image box content goes here -->
+      <button>Button 3</button>
+    </div>
+  </div>
+  
+  <button class="additional-button">Additional Button</button>
+</body>
+</html>

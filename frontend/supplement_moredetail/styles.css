@@ -1,0 +1,275 @@
+
+header {
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .center-align {
+    margin: 0 auto;
+  }
+  
+  .button-wrapper {
+    margin-right: auto;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .button-wrapper {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .cart-btn {
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .cart-btn:hover {
+    background-color: #0d47a1;
+  }
+  a {
+    text-decoration: underline;
+  }  
+
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: greenyellow;
+  }
+  
+  nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: yellow;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+  }
+  
+ 
+  
+ 
+  nav ul li:hover {
+    background-color: green;
+    
+  }
+  
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 18px; 
+    }
+    
+   /* Button style for the dropbtn class and any child i elements */
+  .dropbtn,
+  .dropbtn i {
+    color: white;
+  }
+  
+  /* Dropdown button on hover and focus */
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #2980B9;
+  
+  }
+  /* CSS styles for the card-content */
+/* CSS styles for the card-content */
+/* CSS styles for the card-content */
+.card-content {
+ 
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex; /* Added to make labels and details appear on the same line */
+  align-items: center; /* Added to vertically center the content */
+  flex-wrap: wrap; /* Added to wrap the content if it overflows */
+}
+
+/* Styles for labels */
+.card-content label {
+  font-weight: bold;
+  margin-right: 5px; /* Added to create space between labels and details */
+}
+
+/* CSS styles for the card-image */
+.card-image {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  overflow: hidden; /* Optional: hide any overflowing content */
+}
+
+/* Styles for the image inside card-image */
+.card-image img {
+  width: 100%; /* Make the image fill the entire width of the card-image container */
+  height: 100%; /* Make the image fill the entire height of the card-image container */
+  object-fit: cover; /* Optional: maintain aspect ratio and cover the entire container */
+}
+
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the button */
+.drop button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for the dropdown content */
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Styling for the dropdown items */
+.drop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Highlighting the selected item */
+.drop-content a:hover {
+  background-color: #f1f1f1;
+} 
+
+/*message box styles
+
+/* Styles for the modal dialog box */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Center the modal in the middle of the page */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styles for the buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* OK button styles */
+#btnOK {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Close button styles */
+#btnClose {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Hover styles for buttons */
+button:hover {
+  opacity: 0.8;
+}

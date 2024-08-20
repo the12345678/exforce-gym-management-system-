@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+   $(function() {
+    $("#datepicker").datepicker({
+        dateFormat: 'dd/mm/yy'  // Set the desired date format
+    });
+});
+</script>
+</head>
+
+<body>
+  <h1 class="form-title">Gym member Registration Form</h1>
+
+  <form id="reg_form" action="" method="POST">
+    <table>
+     
+      <tr>
+        <td>
+          <label for="form_name">Member Name:</label>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="form_name" placeholder="" name="name">
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <label for="form_address">Address:</label>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="form_address1" placeholder="" name="address1">
+        </td>
+       
+      </tr>
+      <tr>
+        <td>
+          
+        </td>
+        <td>
+          <input type="text" class="form-control" id="form_address2" placeholder="" name="address2">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="form_dob">Date of Birth:</label>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="datepicker" name="dob">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Gender:</label>
+        </td>
+        <td>
+          <div>
+            <input type="radio" id="form_gender_male" name="gender" value="male">
+            <label for="form_gender_male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="form_gender_female" name="gender" value="female">
+            <label for="form_gender_female">Female</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="form_mail">Email address:</label>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="form_mail" placeholder="" name="mail">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="form_phone">Phone Number:</label>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="form_phone" placeholder="" name="phone">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="form_coach">Coach Name:</label>
+        </td>
+        <td>
+          <select class="form-control" id="form_coach" name="coach"></select>
+        </td>
+        
+      </tr>
+      <tr>
+        <td>
+          <label for="form_purpose">Purpose:</label>
+        </td>
+        <td>
+          <select class="form-control" id="form_purpose" name="purpose" >
+            <option value="purpose1">Cosmetic user</option>
+            <option value="purpose2">Competitive body builder</option>
+            <option value="purpose3">Recitative body builder</option>
+            <option value="purpose4">Glucose level controller</option>
+            <option value="purpose5">blood pressure controller </option>
+            <option value="purpose6">sports user </option>
+            
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="form_image">Image:</label>
+        </td>
+        <td>
+          <div class="image-upload">
+            <input type="file" id="form_image" accept="image/*" name="image">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          
+        </td>
+        <td>
+          <tr>
+        <td>
+          <button type="button" class="btn btn-default" name="refresh">Refresh</button>
+        </td>
+        <td>
+            <button type="submit" class="btn btn-default" name="submit">Submit</button>
+        </td>
+      </tr>
+        </td>
+      </tr>
+    </table>
+    
+  </form>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

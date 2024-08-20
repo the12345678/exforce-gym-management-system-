@@ -1,0 +1,120 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image:url("36497171-registration-text-concept-on-green-digital-world-map-background.webp");
+	background-repeat: repeat;
+	color: black;
+	font-family: "Fira Sans", sans-serif;
+}
+
+/* Updated styles for transparent navigation bar */
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: transparent; /* Make the navigation bar background transparent */
+}
+
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: yellow;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .heading {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+	text-align: right; /* Align the text to the right */
+    margin-left: auto; 
+	margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    background-color: brown; /* Set the button color for navigation bar buttons */
+}
+
+nav ul li:hover {
+    background-color: green;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	font-size: 18px;
+	color: white;
+}
+
+/* Dropdown button on hover and focus */
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #2980B9; /* Change the background color on hover */
+}
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px; /* Increase the gap between header and buttons */
+}
+
+.button {
+    margin: 10px 0;
+    padding: 10px 200px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid white; /* Set border color to white */
+    background-color: transparent; /* Make the background completely transparent */
+    color: white; /* Set text color to white */
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-primary {
+    border-color: white;
+    color: white;
+}
+
+.button-secondary {
+    border-color: white;
+    color: white;
+}
+
+.button-success {
+    border-color: white;
+    color: white;
+}
+
+.button-warning {
+    border-color: white;
+    color: white;
+}
